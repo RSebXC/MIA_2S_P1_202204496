@@ -1,0 +1,16 @@
+digraph Memoria {
+    node [shape=record];
+
+    Memoria [label="{ Memoria | {Nombre: Rodrigo Sebastian Castro Aguilar | Carné: 202204496}}"];
+    
+    bloque1 [label="{Bloque 1| Contenido}"];
+    bloque2 [label="{Bloque 2| Contenido}"];
+    bloque3 [label="{Bloque 3| Contenido}"];
+    
+    Memoria -> bloque1;
+    Memoria -> bloque2;
+    Memoria -> bloque3;
+
+    bloque1 -> bloque2;
+    bloque2 -> bloque3;
+}
